@@ -1,0 +1,113 @@
+/*公共样式结束*/
+body {font-size: 12px;font-family:"微软雅黑"; color: #666;background: #fff;}
+a {color: #666;text-decoration: none;}
+a:hover {color: #C81623;}
+a,address,b,big,blockquote,body,cite,code,dd,del,div,dl,dt,em,fieldset,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,label,legend,li,ol,p,pre,small,span,strong,u,ul,var {
+	margin: 0;
+	padding: 0;
+}
+ol,ul { list-style: none;}
+img {border: 0;vertical-align: middle;}
+em,i {font-style: normal;}
+.fl {float: left;}
+.fr {float: right;}
+.al {text-align: left;}
+.ac {text-align: center;}
+.ar {text-align: right;}
+.none {display: none;}
+.clear:after{ content: '.'; display: block; width: 100%;height:0; overflow: hidden; visibility: hidden; clear: both;}
+
+body, div, ul , li, img{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; 
+}
+.row{ width: 1120px; margin: 10px auto 0;}
+.con{ width: 1100px; margin: 0 auto; }
+/*公共样式结束*/
+
+/*header 开始*/
+.header{ height: 55px;}
+.header .con{ padding: 0 50px;}
+.header .con>div{ height: 49px; margin-top: 3px;}
+.logo{ width: 45px; height: 100%; border: 0; margin-right:20px;}
+.logo-msg{width: 385px;height: 100%;}
+.header-right{ width: 230px;}
+.hr-top i.icon-xinfeng, .hr-top i.icon-xiaoxi, .hr-top i.icon-phone{ color:#005193;}
+.hr-top a, .hr-top span{ display: inline-block; float:left; margin-right: 4px;}
+.hr-top i{ font-size: 20px;}
+.hr-top a{ font-size: 14px;}
+
+.hr-bot{ height: 24px; line-height: 24px; margin-top: 6px;}
+.hr-bot input{ height: 24px;border: 2px solid #ddd;border-right: 0;padding: 0; outline: none;}
+.hr-bot a{ display: inline-block;width: 24px;height:24px; background: #ddd;line-height: 24px; border-right:2px solid #ddd;color: #000;text-align: center;
+	border-top:2px solid #ddd;border-bottom: 2px solid #ddd;
+}
+.hr-bot a:hover{ background: #015293;color:#fff;border-color: #015293;}
+/*header结束*/
+/*navbar开始*/
+.nav-active{ background: #ddd;}
+.nav-active>a{ color: #015293!important;}
+
+.nav{ height: 40px; background: #015293;}
+.nav-left{ width: 188px;height: 100%;
+	border-right: 1px solid #bfbfbf;
+	background: url('./../images/icon_9.jpg') 110px 9px no-repeat;
+}
+.nav-right{height: 40px;}
+.nav-list>li{ width: 112px; height: 40px; line-height: 40px; border-right: 1px solid #bfbfbf;text-align: center; float:left; position: relative; left: 0; top: 0; }
+.nav-list li>a{ color: #fff; font-size: 18px; font-weight: 600;font-family: "FZYouHK_512B","微软雅黑","宋体";}
+
+/*子菜单*/
+.subNav{
+	width: 500px; height: 40px; position: absolute; left: 0; top: 40px;
+	background: #fff url('./../images/icon_11.gif') 45px 2px no-repeat;
+}
+.subNav>li{padding: 0 10px;height: 30px; line-height: 30px;float: left; margin-top: 10px; margin-right: 20px;}
+.subNav li a{ font-size:16px; color: #015293; }
+/*navbar结束*/
+/*banner --- start */
+.banner{ height: 550px;}
+.b-box{ width: 100%; height: 100%;overflow: hidden; position: relative; left: 0; top: 0;}
+.banner-list { width: 100%; height: 100%; }
+.banner-list li{display: none; position: absolute; left: 0; top: 0;}
+.banner-list img{ width: 1120px; height: 550px; border: 0;}
+
+
+
+	/*小圆点定位*/
+.circle{ width: 100%; height: 30px; background: rgba(0,0,0, 0.6); position: absolute;left: 0; bottom: 0; display: flex; justify-content: center; align-items: center;}
+.circle>span{ display: block; width: 20px; height: 20px; line-height: 20px; text-align: center; font-size: 16px; background: #ddd; color:#333; margin-right: 10px; border-radius: 50%;cursor: pointer;}
+.circle>span:hover{ background: red; color:#fff;}
+.circle>span.b-active{ background: red; color:#fff;}
+
+/*banner---------end*/
+.content{
+	min-height: 500px;
+	height: auto!important;
+	height: 500px;
+	background: red;
+	line-height: 30px;
+	font-size: 14px;
+	color: #000;
+}
+.con-left, .con-center, .con-right{
+	width: 33%;
+	min-height: 400px;
+	height:auto!important;
+	height: 40px;
+}
+.list{
+	height: 214px;
+	border-top: 8px solid #00558f;
+	border-bottom: #bababa;
+	background: #ddd;
+}
+
+.link{
+	height: 50px;
+	background: #fff;
+	border-bottom: 1px solid #bababa;
+}
+
+.footer{ height: 195px;background: blue;}
+.footer-left, .footer-right{ width: 50%;color:#fff;}
