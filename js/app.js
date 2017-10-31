@@ -7,7 +7,7 @@ $(function(){
 
 	$(".subNav li a").click(function(){
 		console.log($(this).html());
-	})
+	});
 
 
 	// banner 轮播动画效果
@@ -55,4 +55,12 @@ $(function(){
 			nextIndex = 0;
 		}
 	}
+
+	// 主内容左侧tabs
+	$(".l-title span").hover(function(){
+		var _tabs = $(this).parents('.tabs').find('.l-tab');
+		var _i = $(this).index();
+		$(_tabs).hide();
+		$(_tabs).eq(_i).show();
+	});
 })
