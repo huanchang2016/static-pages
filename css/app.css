@@ -67,12 +67,12 @@ body, div, ul , li, img{
 	z-index: 1;
 } */
 .subNav{
-	 position: absolute; top: 40px;
-	 background: #fff;
-	/* background: #fff url('./../images/icon_11.gif') 245px 2px no-repeat; */
+	width: 100%;
+	position: absolute; top: 40px;
+	background: #fff;
 	z-index: 1;
 }
-.subNav>li{float: left;padding:10px 20px;}
+.subNav>li{float: left; margin-right: 20px; margin-left: 20px;}
 .subNav li a{ font-size:16px; color: #015293; }
 /*navbar结束*/
 /*banner --- start */
