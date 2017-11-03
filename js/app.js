@@ -1,6 +1,28 @@
 $(function(){
+// 子菜单 宽度，定位设置
+	var subNavs = $(".nav-list li>ul.subNav");
+	console.log(subNavs);
+	for(let j=0,len=subNavs.length;j<len;j++){
+		let _liWidth = 0;
+		let _fWidth = $(subNavs).eq(j).outerWidth();
+		// console.log(_fWidth);
+		let _lis = $(subNavs).eq(j).find('li');
+		console.log(_lis);
+		for(let i=0,l=_lis.length; i<l; i++){
+			console.log($(_lis).eq(i).outerWidth());
+			_liWidth = _liWidth + ($(_lis).eq(i).outerWidth() + 40);
+			// console.log($(_lis).eq(i).outerWidth() + 40);
+		}
+		console.log(_liWidth);
+		$(subNavs).eq(j).css({
+			width: _liWidth,
+			left: -(_liWidth - _fWidth)/2
+		});
+	}
+	
+
 	$(".nav-list>li").hover(function(){
-		$(this).addClass("nav-active").find('.subNav').show();
+		$(this).addClass("nav-active").find('.subNav').show();	
 	}, function(){
 		$(this).removeClass("nav-active").find('.subNav').hide();
 	});
@@ -9,6 +31,9 @@ $(function(){
 		console.log($(this).html());
 	});
 
+	// 子菜单 宽度，定位设置
+	var _liWidth = 0;
+	
 
 	// banner 轮播动画效果
 	var $lis = $(".banner-list li"),
@@ -37,13 +62,13 @@ $(function(){
 	$(".b-box").hover(function(){
 		clearInterval(_time);
 	},function(){
-		_time = setInterval(move,2000);
+		_time = setInterval(move,3000);
 	}).trigger("mouseleave");// trigger()，表示触发某事件。
 
 	// 淡入淡出的轮播函数move（）
 	function move(){
-		$lis.eq(currentIndex).fadeOut(1000);
-		$lis.eq(nextIndex).fadeIn(1000);
+		$lis.eq(currentIndex).fadeOut(1500);
+		$lis.eq(nextIndex).fadeIn(1500);
 		
 
 		// 改变小圆点样式
@@ -51,7 +76,7 @@ $(function(){
 		.siblings().removeClass("b-active");
 		currentIndex = nextIndex;
 		nextIndex++;
-		if(nextIndex === len){
+		if(nextIndex > len){
 			nextIndex = 0;
 		}
 	}
@@ -90,7 +115,7 @@ $(function(){
 				_index = 1;
 			}
 		});	
-	}, 2000);
+	}, 3000);
 
 
 	// 运动函数

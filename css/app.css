@@ -61,12 +61,18 @@ body, div, ul , li, img{
 .nav-list li>a{ color: #fff; font-size: 18px; font-weight: 600;font-family: "FZYouHK_512B","微软雅黑","宋体";}
 
 /*子菜单*/
+/* .subNav{
+	width: 500px; position: absolute; left: -200px; top: 40px;
+	background: #fff url('./../images/icon_11.gif') 245px 2px no-repeat;
+	z-index: 1;
+} */
 .subNav{
-	width: 500px; height: 40px; position: absolute; left: 0; top: 40px;
-	background: #fff url('./../images/icon_11.gif') 45px 2px no-repeat;
+	 position: absolute; top: 40px;
+	 background: #fff;
+	/* background: #fff url('./../images/icon_11.gif') 245px 2px no-repeat; */
 	z-index: 1;
 }
-.subNav>li{padding: 0 10px;height: 30px; line-height: 30px;float: left; margin-top: 10px; margin-right: 20px;}
+.subNav>li{float: left;padding:10px 20px;}
 .subNav li a{ font-size:16px; color: #015293; }
 /*navbar结束*/
 /*banner --- start */
