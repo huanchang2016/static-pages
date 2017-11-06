@@ -57,23 +57,23 @@ body, div, ul , li, img{
 	background: url('./../images/icon_9.jpg') 110px 9px no-repeat;
 }
 .nav-right{height: 40px;}
-.nav-list>li{ width: 112px; height: 40px; line-height: 40px; border-right: 1px solid #bfbfbf;text-align: center; float:left; position: relative; left: 0; top: 0; }
+.nav-list>li{ height: 40px; line-height: 40px; padding: 0 20px; border-right: 1px solid #bfbfbf;text-align: center; float:left; position: relative; left: 0; top: 0; }
 .nav-list li>a{ color: #fff; font-size: 18px; font-weight: 600;font-family: "FZYouHK_512B","微软雅黑","宋体";}
 
 /*子菜单*/
-/* .subNav{
-	width: 500px; position: absolute; left: -200px; top: 40px;
-	background: #fff url('./../images/icon_11.gif') 245px 2px no-repeat;
-	z-index: 1;
-} */
+/* .subNavBox{ width: 1120px; position: absolute; left:0; top: 40px;} */
 .subNav{
-	width: 100%;
-	position: absolute; top: 40px;
+	min-width: 200px;
+	width: auto!important;
+	width: 200px;
+	position: absolute;
+	top: 40px;
+	left: -1px;
 	background: #fff;
 	z-index: 1;
 }
-.subNav>li{float: left; margin-right: 20px; margin-left: 20px;}
-.subNav li a{ font-size:16px; color: #015293; }
+.subNav>li{margin-right: 20px; margin-left: 20px;}
+.subNav li a{ font-size:16px; color: #015293; white-space: nowrap; }
 /*navbar结束*/
 /*banner --- start */
 .banner{ height: 550px;}
@@ -191,6 +191,7 @@ body, div, ul , li, img{
 .r-cx-con{ width: 50%; height: 115px; display: flex; flex-direction: column; justify-content: space-around; align-items: center;}
 .cx-img{ width: 64px; height: 64px; overflow: hidden; }
 .cx-des{ width: 100px; text-align: center; line-height: 18px;}
+.cx-des a{ color: #000;}
 .r-date{ height: 240px; }
 .cx-date{ width: 230px; height: 46px; margin: 20px auto 0; overflow: hidden; border-radius: 10px; background:url('./../images/sjcx_btn.jpg') no-repeat left top; background-size: cover; }
 .cx-date:hover{ background-image: url('./../images/sjcx_btn_hover.jpg'); }

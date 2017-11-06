@@ -1,26 +1,8 @@
 $(function(){
-// 子菜单 宽度，定位设置
-	// var subNavs = $(".nav-list li>ul.subNav");
-	// console.log(subNavs);
-	// for(let j=0,len=subNavs.length;j<len;j++){
-	// 	let _liWidth = 0;
-	// 	let _fWidth = $(subNavs).eq(j).outerWidth();
-	// 	let _lis = $(subNavs).eq(j).find('li');
-	// 	for(let i=0,l=_lis.length; i<l; i++){
-	// 		console.log($(_lis).eq(i).outerWidth());
-	// 		_liWidth = _liWidth + ($(_lis).eq(i).outerWidth() + 40);
-	// 	}
-	// 	$(subNavs).eq(j).css({
-	// 		width: _liWidth,
-	// 		left: -(_liWidth - _fWidth)/2
-	// 	});
-	// }
-	
-
 	$(".nav-list>li").hover(function(){
-		$(this).addClass("nav-active").find('.subNav').show();	
+		$(this).addClass("nav-active").find('.subNav').stop().show(500);
 	}, function(){
-		$(this).removeClass("nav-active").find('.subNav').hide();
+		$(this).removeClass("nav-active").find('.subNav').stop().hide(500);
 	});
 
 	$(".subNav li a").click(function(){
