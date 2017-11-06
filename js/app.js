@@ -9,9 +9,11 @@ $(function(){
 		console.log($(this).html());
 	});
 
-	// 子菜单 宽度，定位设置
-	var _liWidth = 0;
-	
+	// 职位搜索选中样式
+	$(".choese>span").click(function(){
+		$(this).addClass('choese-active').siblings().removeClass('choese-active');
+	})
+
 
 	// banner 轮播动画效果
 	var $lis = $(".banner-list li"),

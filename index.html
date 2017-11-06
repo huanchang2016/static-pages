@@ -71,7 +71,7 @@
 					<li>
 						<a href="javascript:;">就业见习基地</a>
 						<ul class="subNav none clear">
-							<li><a href="javascript:;">公共就业创业服务活动管理</a></li>
+							<li><a href="./html/jyLogin.html">公共就业创业服务活动管理</a></li>
 						</ul>
 					</li>
 					<li>
@@ -98,13 +98,230 @@
 		</div>
 	</div>
 	<div class="content row">
-		<div class="con ac">
-			joblist search
+		<div class="con">
+			<ul class="jobs">
+				<li class="clear">
+					<div class="jobSearch">
+						<input name="search-content" class="search-content fl" id="search-content" type="text" placeholder="输入搜索职位" />
+						<span class="search-btn fl">搜索</span>
+					</div>
+				</li>
+				<li class="clear">
+					<div class="job-list-title fl">区域<span class="fr">:</span></div>
+					<div class="choese fl clear">
+						<span class="choese-active">全部</span><span>天府新区</span><span>锦江区</span><span>青羊区</span><span>金牛区</span><span>武侯区</span><span>成华区</span><span>龙泉驿区</span><span>青白江区</span><span>新都区</span><span>温江区</span><span>双流区</span><span>金堂县</span><span>郫都区</span><span>大邑县</span><span>蒲江县</span><span>新津县</span><span>简阳市</span><span>都江堰市</span><span>彭州市</span><span>邛崃市</span><span>崇州市</span>
+					</div>
+				</li>
+				<li class="clear">
+					<div class="job-list-title fl">职位<span class="fr">:</span></div>
+					<div class="choese fl clear">
+						<span class="choese-active">全部</span><span>会计</span><span>销售</span><span>司机</span><span>编辑</span><span>采购</span><span>普工/技工</span><span>服务员</span><span>客服</span><span>艺术/设计</span><span>行政</span><span>物流</span><span>财务</span><span>收银员</span><span>营业员</span><span>人事</span><span>厨师</span><span>日语</span><span>银行</span><span>医生</span><span>电子商务</span><span>公务员</span><span>律师/法务</span><span>教师</span><span>酒店/旅游</span><span>影视/媒体</span>
+					</div>
+				</li>
+				<li class="clear">
+					<div class="job-list-title fl">月薪<span class="fr">:</span></div>
+					<div class="choese fl clear">
+						<span class="choese-active">不限</span><span>2千以下</span><span>2-3千</span><span>3-4.5千</span><span>4.5-6千</span><span>6-8千</span><span>0.8-1万</span><span>1-1.5万</span><span>1.5-2万</span><span>2-3万</span><span>3-4万</span><span>4-5万</span><span>5万以上</span>
+					</div>
+				</li>
+				<li class="clear">
+					<div class="job-list-title fl" style="letter-spacing: 3px;">求职意向<span class="fr">:</span></div>
+					<div class="choese fl clear">
+						<span class="choese-active">不限</span><span>全职</span><span>兼职</span><span>实习</span>
+					</div>
+				</li>
+				<li class="clear">
+					<div class="job-list-title fl" style="letter-spacing: 3px;">工作经验<span class="fr">:</span></div>
+					<div class="choese fl clear">
+						<span class="choese-active">不限</span><span>1年以下</span><span>1-3年</span><span>3-5年</span><span>5-8年</span><span>8年以上</span>
+					</div>
+				</li>
+				<li class="clear">
+					<div class="job-list-title fl" style="letter-spacing: 3px;">学历要求<span class="fr">:</span></div>
+					<div class="choese fl clear">
+						<span class="choese-active">不限</span><span>高中及以下</span><span>大专</span><span>本科</span><span>研究生</span><span>博士</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="con">
+			<ul class="job-list">
+				<li class="job-list-oper clear">
+					<label for="jobListCheckAll" class="fl">
+						<input type="checkbox" name="jobListCheckAll" id="jobListCheckAll" class="jobListCheckAll fl" />
+						<span class="fl">全选</span>
+					</label>
+					<span class="fl">申请职位</span>
+					<span class="fl">收藏职位</span>
+					<span class="fl">智能排序</span>
+				</li>
+				<li class="job-list-title-name clear">
+					<div class="jobName fl">职位名</div>
+					<div class="companyName fl">公司名</div>
+					<div class="workAddr fl">工作地点</div>
+					<div class="jobSalary fl">薪资</div>
+					<div class="pubdate fl">发布时间</div>
+				</li>
+				<li class="clear">
+					<div class="jobName fl">
+						<label class="fl">
+							<input type="checkbox" name="jobsName" class="jobsName" />
+						</label>
+						<a href="javascript:;" title="储备干部 欢迎应届毕业生 全勤奖+绩效储备干部 欢迎应届毕业生 全勤奖+绩效">储备干部 欢迎应届毕业生 全勤奖+绩效储备干部 欢迎应届毕业生 全勤奖+绩效</a>
+					</div>
+					<div class="companyName fl ac"><a href="javascript:;" title="昆明桑果电子科技有限公司">昆明桑果电子科技有限公司</a></div>
+					<div class="workAddr fl ac"><a href="javascript:;">昆明</a></div>
+					<div class="jobSalary salary fl ac">3-5K</div>
+					<div class="pubdate fl ac">2017-12-12</div>
+				</li>
+				<li class="clear">
+					<div class="jobName fl">
+						<label class="fl">
+							<input type="checkbox" name="jobsName" class="jobsName" />
+						</label>
+						<a href="javascript:;" title="见习主管  底薪（3000-5000）元+提成+晋升">见习主管  底薪（3000-5000）元+提成+晋升</a>
+					</div>
+					<div class="companyName fl ac"><a href="javascript:;" title="昆明欧聚科技有限公司">昆明欧聚科技有限公司</a></div>
+					<div class="workAddr fl ac"><a href="javascript:;">昆明</a></div>
+					<div class="jobSalary salary fl ac">3-5K</div>
+					<div class="pubdate fl ac">2017-12-12</div>
+				</li>
+				<li class="clear">
+					<div class="jobName fl">
+						<label class="fl">
+							<input type="checkbox" name="jobsName" class="jobsName" />
+						</label>
+						<a href="javascript:;" title="招聘体验官(Operation Assistant)">招聘体验官(Operation Assistant)</a>
+					</div>
+					<div class="companyName fl ac"><a href="javascript:;" title="前程无忧">前程无忧</a></div>
+					<div class="workAddr fl ac"><a href="javascript:;">昆明</a></div>
+					<div class="jobSalary salary fl ac">6-8K</div>
+					<div class="pubdate fl ac">2017-12-12</div>
+				</li>
+				<li class="clear">
+					<div class="jobName fl">
+						<label class="fl">
+							<input type="checkbox" name="jobsName" class="jobsName" />
+						</label>
+						<a href="javascript:;" title="储备干部 欢迎应届毕业生 全勤奖+绩效储备干部 欢迎应届毕业生 全勤奖+绩效">储备干部 欢迎应届毕业生 全勤奖+绩效储备干部 欢迎应届毕业生 全勤奖+绩效</a>
+					</div>
+					<div class="companyName fl ac"><a href="javascript:;" title="昆明桑果电子科技有限公司">昆明桑果电子科技有限公司</a></div>
+					<div class="workAddr fl ac"><a href="javascript:;">昆明</a></div>
+					<div class="jobSalary salary fl ac">3-5K</div>
+					<div class="pubdate fl ac">2017-12-12</div>
+				</li>
+				<li class="clear">
+					<div class="jobName fl">
+						<label class="fl">
+							<input type="checkbox" name="jobsName" class="jobsName" />
+						</label>
+						<a href="javascript:;" title="见习主管  底薪（3000-5000）元+提成+晋升">见习主管  底薪（3000-5000）元+提成+晋升</a>
+					</div>
+					<div class="companyName fl ac"><a href="javascript:;" title="昆明欧聚科技有限公司">昆明欧聚科技有限公司</a></div>
+					<div class="workAddr fl ac"><a href="javascript:;">昆明</a></div>
+					<div class="jobSalary salary fl ac">3-5K</div>
+					<div class="pubdate fl ac">2017-12-12</div>
+				</li>
+				<li class="clear">
+					<div class="jobName fl">
+						<label class="fl">
+							<input type="checkbox" name="jobsName" class="jobsName" />
+						</label>
+						<a href="javascript:;" title="招聘体验官(Operation Assistant)">招聘体验官(Operation Assistant)</a>
+					</div>
+					<div class="companyName fl ac"><a href="javascript:;" title="前程无忧">前程无忧</a></div>
+					<div class="workAddr fl ac"><a href="javascript:;">昆明</a></div>
+					<div class="jobSalary salary fl ac">6-8K</div>
+					<div class="pubdate fl ac">2017-12-12</div>
+				</li>
+				<li class="clear">
+					<div class="jobName fl">
+						<label class="fl">
+							<input type="checkbox" name="jobsName" class="jobsName" />
+						</label>
+						<a href="javascript:;" title="储备干部 欢迎应届毕业生 全勤奖+绩效储备干部 欢迎应届毕业生 全勤奖+绩效">储备干部 欢迎应届毕业生 全勤奖+绩效储备干部 欢迎应届毕业生 全勤奖+绩效</a>
+					</div>
+					<div class="companyName fl ac"><a href="javascript:;" title="昆明桑果电子科技有限公司">昆明桑果电子科技有限公司</a></div>
+					<div class="workAddr fl ac"><a href="javascript:;">昆明</a></div>
+					<div class="jobSalary salary fl ac">3-5K</div>
+					<div class="pubdate fl ac">2017-12-12</div>
+				</li>
+				<li class="clear">
+					<div class="jobName fl">
+						<label class="fl">
+							<input type="checkbox" name="jobsName" class="jobsName" />
+						</label>
+						<a href="javascript:;" title="见习主管  底薪（3000-5000）元+提成+晋升">见习主管  底薪（3000-5000）元+提成+晋升</a>
+					</div>
+					<div class="companyName fl ac"><a href="javascript:;" title="昆明欧聚科技有限公司">昆明欧聚科技有限公司</a></div>
+					<div class="workAddr fl ac"><a href="javascript:;">昆明</a></div>
+					<div class="jobSalary salary fl ac">3-5K</div>
+					<div class="pubdate fl ac">2017-12-12</div>
+				</li>
+				<li class="clear">
+					<div class="jobName fl">
+						<label class="fl">
+							<input type="checkbox" name="jobsName" class="jobsName" />
+						</label>
+						<a href="javascript:;" title="招聘体验官(Operation Assistant)">招聘体验官(Operation Assistant)</a>
+					</div>
+					<div class="companyName fl ac"><a href="javascript:;" title="前程无忧">前程无忧</a></div>
+					<div class="workAddr fl ac"><a href="javascript:;">昆明</a></div>
+					<div class="jobSalary salary fl ac">6-8K</div>
+					<div class="pubdate fl ac">2017-12-12</div>
+				</li>
+				<li class="clear">
+					<div class="jobName fl">
+						<label class="fl">
+							<input type="checkbox" name="jobsName" class="jobsName" />
+						</label>
+						<a href="javascript:;" title="储备干部 欢迎应届毕业生 全勤奖+绩效储备干部 欢迎应届毕业生 全勤奖+绩效">储备干部 欢迎应届毕业生 全勤奖+绩效储备干部 欢迎应届毕业生 全勤奖+绩效</a>
+					</div>
+					<div class="companyName fl ac"><a href="javascript:;" title="昆明桑果电子科技有限公司">昆明桑果电子科技有限公司</a></div>
+					<div class="workAddr fl ac"><a href="javascript:;">昆明</a></div>
+					<div class="jobSalary salary fl ac">3-5K</div>
+					<div class="pubdate fl ac">2017-12-12</div>
+				</li>
+				<li class="clear">
+					<div class="jobName fl">
+						<label class="fl">
+							<input type="checkbox" name="jobsName" class="jobsName" />
+						</label>
+						<a href="javascript:;" title="见习主管  底薪（3000-5000）元+提成+晋升">见习主管  底薪（3000-5000）元+提成+晋升</a>
+					</div>
+					<div class="companyName fl ac"><a href="javascript:;" title="昆明欧聚科技有限公司">昆明欧聚科技有限公司</a></div>
+					<div class="workAddr fl ac"><a href="javascript:;">昆明</a></div>
+					<div class="jobSalary salary fl ac">3-5K</div>
+					<div class="pubdate fl ac">2017-12-12</div>
+				</li>
+				<li class="clear">
+					<div class="jobName fl">
+						<label class="fl">
+							<input type="checkbox" name="jobsName" class="jobsName" />
+						</label>
+						<a href="javascript:;" title="招聘体验官(Operation Assistant)">招聘体验官(Operation Assistant)</a>
+					</div>
+					<div class="companyName fl ac"><a href="javascript:;" title="前程无忧">前程无忧</a></div>
+					<div class="workAddr fl ac"><a href="javascript:;">昆明</a></div>
+					<div class="jobSalary salary fl ac">6-8K</div>
+					<div class="pubdate fl ac">2017-12-12</div>
+				</li>
+			</ul>
 		</div>
 		<div class="con clear">
 			<div class="con-left fl">
 				<div class="l-list">
-					<h5 class="l-title">国务院</h5>
+					<h5 class="l-title">创业政策</h5>
+					<ul class="l-list-con clear">
+						<li class="l-icon"><a href="javascript:;" title="总理：督查整改情况年底前要向国务院报告">总理：督查整改情况年底前要向国务院报告</a></li>
+						<li class="l-icon"><a href="javascript:;" title="国务院启动今年全国减轻企业负担专项督查">国务院启动今年全国减轻企业负担专项督查</a></li>
+						<li class="l-icon"><a href="javascript:;" title="环境保护部部长调研秋冬季大气污染综合治理攻坚行动强化督查和巡查工作">环境保护部部长调研秋冬季大气污染综合治理攻坚行动强化督查和巡查工作</a></li>
+						<li class="l-icon"><a href="javascript:;" title="农业部介绍农业产业扶贫有关情况">农业部介绍农业产业扶贫有关情况</a></li>
+						<li class="l-icon"><a href="javascript:;" title="首批国家海洋督察组完成督察进驻工作">首批国家海洋督察组完成督察进驻工作</a></li>
+					</ul>
+				</div>
+				<div class="l-list">
+					<h5 class="l-title">创业培训</h5>
 					<ul class="l-list-con clear">
 						<li class="l-icon"><a href="javascript:;" title="公布新一批建设工程企业资质名单">李克强参加党的十九大广西代表团讨论</a></li>
 						<li class="l-icon"><a href="javascript:;" title="李克强参加党的十九大广西代表团讨论">张高丽参加党的十九大陕西代表团讨论</a></li>
@@ -115,40 +332,7 @@
 					</ul>
 				</div>
 				<div class="l-list">
-					<h5 class="l-title">专题</h5>
-					<ul class="l-list-con clear">
-						<li class="l-list-img"><a href="javascript:;"><img src="./images/56b9ff3514644a999515a5dcce19d1f9.jpg" alt=""></a></li>
-						<li class="l-icon"><a href="javascript:;" title="李克强主持营改增座谈会 |  “1+6” 圆桌">李克强主持营改增座谈会 |  “1+6” 圆桌</a></li>
-						<li class="l-icon"><a href="javascript:;" title="聚焦“互联网+政务服务” | 政务公开在行动">聚焦“互联网+政务服务” | 政务公开在行动</a></li>
-					</ul>
-				</div>
-				<div class="l-list tabs">
-					<h5 class="l-title"><span>视频</span>  &nbsp;&nbsp;|&nbsp;&nbsp; <span>音频</span></h5>
-					<div class="l-tab l-list-con video">
-						<div class="l-list-img l-video">
-							<a href="javascript:;"><img src="./images/9f945b903d7d40f8a5a3fd45e728a619.jpg" alt=""></a>
-							<span class="play"></span>
-						</div>
-					</div>
-					<div class="l-tab l-list-con video none">
-						<div class="l-list-img l-radio clear">
-							<img class="fl" src="./images/ca434e0215cf49779f36e13e970537c5.jpg" alt="">
-							<div class="l-radio-play fl">
-								<audio id="audio1" src="./video/ecd88431adc248c3aa9ebe9e3b8c0ec4.MP3"></audio>
-								<div class="showtime">
-									<div class="audio_play"></div>
-									<div class="audio_date">
-										<span>00:00</span> / 
-										<span>01:39</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<p class="l-video-des"><a href="javascript:;" title="李克强主持召开国务院会议">李克强主持召开国务院会议</a></p>
-				</div>
-				<div class="l-list">
-					<h5 class="l-title">政务联播</h5>
+					<h5 class="l-title">创业咨询</h5>
 					<ul class="l-list-con clear">
 						<li><a href="javascript:;" class="l-branch">【统计局】</a><a href="javascript:;" title="国民经济稳中向好态势发展">国民经济稳中向好态势发展</a></li>
 						<li><a href="javascript:;" class="l-branch">【统计局】</a><a href="javascript:;" title="公布新一批建设工程企业资质名单">公布新一批建设工程企业资质名单</a></li>
@@ -158,39 +342,47 @@
 						<li><a href="javascript:;" class="l-branch">【统计局】</a><a href="javascript:;" title="前三季度就业形势保持总体稳定">前三季度就业形势保持总体稳定</a></li>
 					</ul>
 				</div>
-				<div class="l-list tabs mb0">
-					<h5 class="l-title"><span>经典瞬间</span>  &nbsp;&nbsp;| &nbsp;&nbsp;<span>每周一画</span>  &nbsp;&nbsp;| &nbsp;&nbsp;<span>图解</span></h5>
-					<div class="l-tab l-list-con">
-						<div class="diagram">
-							<a href="javascript:;"><img src="./images/d05e994b08b94e3d96d1a6f0dd29b1bd.jpg" alt=""></a>
-							<p class="l-img-des"><a href="javascript:;" title="李克强：城市发展要让群众宜业宜居（2015-09-25）">李克强：城市发展要让群众宜业宜居（2015-09-25）</a></p>
-						</div>
-					</div>
-					<div class="l-tab l-list-con none">
-						<div class="diagram">
-							<a href="javascript:;"><img src="./images/2de8ef07792541b394b1774b0bb6d84b.jpg" alt=""></a>
-							<p class="l-img-des"><a href="javascript:;" title="这件大事为什么这么“火”？国务院有“画”说！">这件大事为什么这么“火”？国务院有“画”说！</a></p>
-						</div>
-					</div>
-					<div class="l-tab l-list-con none">
-						<div class="diagram">
-							<a href="javascript:;"><img src="./images/4eb5905a428a4b459c0371c6f47b28e3.jpg" alt=""></a>
-							<p class="l-img-des"><a href="javascript:;" title="图解：2017年10月30日国务院常务会议">图解：2017年10月30日国务院常务会议</a></p>
-						</div>
-					</div>
+				<div class="l-list">
+					<h5 class="l-title">创业项目库</h5>
+					<ul class="l-list-con clear">
+						<li class="l-icon"><a href="javascript:;" title="新闻办就中国气候变化事务等举行发布会">新闻办就中国气候变化事务等举行发布会</a></li>
+						<li class="l-icon"><a href="javascript:;" title="新闻办介绍前三季度工业通信业发展情况">新闻办介绍前三季度工业通信业发展情况</a></li>
+						<li class="l-icon"><a href="javascript:;" title="统计局介绍前三季度国民经济运行情况">统计局介绍前三季度国民经济运行情况</a></li>
+						<li class="l-icon"><a href="javascript:;" title="农业部介绍农业产业扶贫有关情况">农业部介绍农业产业扶贫有关情况</a></li>
+						<li class="l-icon"><a href="javascript:;" title="新闻办就前三季度进出口情况举行发布会">新闻办就前三季度进出口情况举行发布会</a></li>
+						<li class="l-icon"><a href="javascript:;" title="新闻办就前三季度进出口情况举行发布会">新闻办就前三季度进出口情况举行发布会</a></li>
+					</ul>
 				</div>
 			</div>
 			<div class="con-center fl">
 				<div class="l-list">
-					<h5 class="l-title">政策 <a class="c-title-right fr" href="javascript:;">政府信息公开专栏</a></h5>
-					<ul class="c-list-con clear">
-						<li><a href="javascript:;" title="公布新一批建设工程企业资质名单">李克强参加党的十九大广西代表团讨论李克强参加党的十九大广西代表团讨论<span class="c-list-date">(2017-10-10)</span></a></li>
-						<li><a href="javascript:;" title="李克强参加党的十九大广西代表团讨论">张高丽参加党的十九大陕西代表团讨论</a></li>
-						<li><a href="javascript:;" title="部分党核国家领导同志参加十九大代表大会">部分党核国家领导同志参加十九大代表大会</a></li>
-						<li><a href="javascript:;" title="部分党核国家领导同志参加十九大代表大会">部分党核国家领导同志参加十九大代表大会</a></li>
-						<li><a href="javascript:;" title="部分党核国家领导同志参加十九大代表大会">部分党核国家领导同志参加十九大代表大会</a></li>
-						<li><a href="javascript:;" title="部分党核国家领导同志参加十九大代表大会">部分党核国家领导同志参加十九大代表大会</a></li>
+					<h5 class="l-title">法律法规</h5>
+					<ul class="l-list-con fbh-list clear">
+						<li><a href="javascript:;" class="l-branch">【统计局】</a><a href="javascript:;" title="国民经济稳中向好态势发展">国民经济稳中向好态势发展</a></li>
+						<li><a href="javascript:;" class="l-branch">【统计局】</a><a href="javascript:;" title="公布新一批建设工程企业资质名单">公布新一批建设工程企业资质名单</a></li>
+						<li><a href="javascript:;" class="l-branch">【统计局】</a><a href="javascript:;" title="网络市场监管专项行动扎实推进">网络市场监管专项行动扎实推进</a></li>
+						<li><a href="javascript:;" class="l-branch">【统计局】</a><a href="javascript:;" title="部署十三五大数据产业发展工作">部署十三五大数据产业发展工作</a></li>
+						<li><a href="javascript:;" class="l-branch">【统计局】</a><a href="javascript:;" title="小微服务业企业总体发展稳中有升">小微服务业企业总体发展稳中有升</a></li>
 					</ul>
+				</div>
+				<div class="l-list">
+					<h5 class="l-title">培训信息</h5>
+					<ul class="l-list-con fbh-list clear">
+						<li class="l-icon"><a href="javascript:;" title="新闻办就中国气候变化事务等举行发布会">新闻办就中国气候变化事务等举行发布会</a></li>
+						<li class="l-icon"><a href="javascript:;" title="新闻办介绍前三季度工业通信业发展情况">新闻办介绍前三季度工业通信业发展情况</a></li>
+						<li class="l-icon"><a href="javascript:;" title="统计局介绍前三季度国民经济运行情况">统计局介绍前三季度国民经济运行情况</a></li>
+						<li class="l-icon"><a href="javascript:;" title="农业部介绍农业产业扶贫有关情况">农业部介绍农业产业扶贫有关情况</a></li>
+						<li class="l-icon"><a href="javascript:;" title="新闻办就前三季度进出口情况举行发布会">新闻办就前三季度进出口情况举行发布会</a></li>
+					</ul>
+				</div>
+				<div class="l-list">
+					<h5 class="l-title">职业能力测评</h5>
+					<div class="fbh">
+						<img src="./images/1583f1c87bf54c04880abf2fd5105891.jpg" alt="">
+						<div class="fbh-des">
+							<a href="javascript:;">李干杰：京津冀PM2.5浓度比13年降30%</a>
+						</div>
+					</div>
 				</div>
 				<div class="l-list">
 					<h5 class="l-title">互动</h5>
@@ -209,15 +401,6 @@
 							<div class="msg-btn"><a href="javascript:;">留言选登</a></div>
 						</div>
 					</div>
-					<div class="msg-show clear">
-						<div class="msg-show-l fl">
-							<h6 class="msg-show-title">繁多的收费减减减，<br>我向总理说句话</h6>
-							<div class="msg-info">哪些不该收的政府性收费在困扰你？降低企业负担还有啥好建议？<a href="javascript:;">>>></a></div>
-						</div>
-						<div class="msg-show-r fr">
-							<img src="./images/msg-show-img1.jpg" alt="">
-						</div>
-					</div>
 					<div class="msg-show other-tit clear">
 						<div class="other-title">回应关切</div>
 						<div class="msg-show-l fl">
@@ -229,36 +412,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="l-list">
-					<h5 class="l-title">部长之声-发布会</h5>
-					<div class="fbh">
-						<img src="./images/1583f1c87bf54c04880abf2fd5105891.jpg" alt="">
-						<div class="fbh-des">
-							<a href="javascript:;">李干杰：京津冀PM2.5浓度比13年降30%</a>
-						</div>
-					</div>
-					<ul class="l-list-con fbh-list clear">
-						<li class="l-icon"><a href="javascript:;" title="新闻办就中国气候变化事务等举行发布会">新闻办就中国气候变化事务等举行发布会</a></li>
-						<li class="l-icon"><a href="javascript:;" title="新闻办介绍前三季度工业通信业发展情况">新闻办介绍前三季度工业通信业发展情况</a></li>
-						<li class="l-icon"><a href="javascript:;" title="统计局介绍前三季度国民经济运行情况">统计局介绍前三季度国民经济运行情况</a></li>
-						<li class="l-icon"><a href="javascript:;" title="农业部介绍农业产业扶贫有关情况">农业部介绍农业产业扶贫有关情况</a></li>
-						<li class="l-icon"><a href="javascript:;" title="新闻办就前三季度进出口情况举行发布会">新闻办就前三季度进出口情况举行发布会</a></li>
-					</ul>
-				</div>
-				<div class="l-list mb0">
-					<h5 class="l-title">督查</h5>
-					<ul class="l-list-con fbh-list clear">
-						<li class="l-icon"><a href="javascript:;" title="总理：督查整改情况年底前要向国务院报告">总理：督查整改情况年底前要向国务院报告</a></li>
-						<li class="l-icon"><a href="javascript:;" title="国务院启动今年全国减轻企业负担专项督查">国务院启动今年全国减轻企业负担专项督查</a></li>
-						<li class="l-icon"><a href="javascript:;" title="环境保护部部长调研秋冬季大气污染综合治理攻坚行动强化督查和巡查工作">环境保护部部长调研秋冬季大气污染综合治理攻坚行动强化督查和巡查工作</a></li>
-						<li class="l-icon"><a href="javascript:;" title="农业部介绍农业产业扶贫有关情况">农业部介绍农业产业扶贫有关情况</a></li>
-						<li class="l-icon"><a href="javascript:;" title="首批国家海洋督察组完成督察进驻工作">首批国家海洋督察组完成督察进驻工作</a></li>
-					</ul>
-				</div>
 			</div>
 			<div class="con-right fr">
 				<div class="r-list">
-					<h5 class="r-list-title">服务</h5>
+					<h5 class="r-list-title">政策咨询</h5>
 					<div class="r-list-icon">
 						<div class="r-icon-list"><a href="javascript:;"><span class="people-icon"></span><p>公民</p></a></div>
 						<div class="r-icon-list"><a href="javascript:;"><span class="company-icon"></span><p>企业</p></a></div>
@@ -274,7 +431,7 @@
 					</ul>
 				</div>
 				<div class="r-list">
-					<h5 class="l-title">查询</h5>
+					<h5 class="l-title">办事指南</h5>
 					<div class="r-cx-list clear">
 						<div class="r-cx-con fl">
 							<img src="./images/cx-con1.png" alt="税收优惠政策" class="cx-img">
@@ -297,26 +454,18 @@
 						<li class="l-icon"><a href="javascript:;" title="中央预决算公开查询">中央预决算公开查询</a></li>
 						<li class="l-icon"><a href="javascript:;" title="高校本科专业备案和审批结果">高校本科专业备案和审批结果</a></li>
 						<li class="l-icon"><a href="javascript:;" title="取消和下放的行政审批事项查询">取消和下放的行政审批事项查询</a></li>
-						<li class="l-icon"><a href="javascript:;" title="国务院已公布取消的职业资格许">国务院已公布取消的职业资格许</a></li>
-						<li class="l-icon"><a href="javascript:;" title="可和认定事项查询">可和认定事项查询</a></li>
 					</ul>
+					<div class="cx-date"><a href="javscript:;"></a></div>
 				</div>
-				<div class="r-list mb0">
-					<h5 class="l-title">数据</h5>
+				<div class="r-list">
+					<h5 class="l-title">就业失业基金运行分析</h5>
 					<ul class="l-list-con r-date">
 						<li><a href="javascript:;" title="10月中国制造业采购经理指数51.6% 制造业延续扩张发展态势">10月中国制造业采购经理指数51.6% 制造业延续扩张发展态势</a></li>
 						<li><a href="javascript:;" title="10月中国非制造业商务活动指数54.3% 继续保持平稳较快增长态势">10月中国非制造业商务活动指数54.3% 继续保持平稳较快增长态势</a></li>
 						<li><a href="javascript:;" title="【↑10.6%】1-9月全国税务部门组织税收收入99237亿元 同比增长">【↑10.6%】1-9月全国税务部门组织税收收入99237亿元 同比增长</a></li>
 						<li><a href="javascript:;" title="前三季度服务业对经济增长贡献率达58.8% 主导作用持续发挥">前三季度服务业对经济增长贡献率达58.8% 主导作用持续发挥</a></li>
 						<li><a href="javascript:;" title="前三季度农民增收形势向好 农村创业创新人数超过700万人">前三季度农民增收形势向好 农村创业创新人数超过700万人</a></li>
-						<li><a href="javascript:;" title="【↑22.8%】1-9月份全国规模以上工业企业利润总额同比增长">【↑22.8%】1-9月份全国规模以上工业企业利润总额同比增长</a></li>
-						<li><a href="javascript:;" title="今年截至8月底 多个部门采取多项举措减轻企业负担超过1700亿元">今年截至8月底 多个部门采取多项举措减轻企业负担超过1700亿元</a></li>
 					</ul>
-					<div class="cx-date"><a href="javscript:;"></a></div>
-					<div class="c-list-bottom">
-						<img class="c-bottom-img" src="./images/3b112bbbce014e0999a16ab2d046cc7d.jpg" alt="">
-						<p class="c-bottom-img-des"><a href="javscript:;">1至9月就业延续稳中向好态势</a></p>
-					</div>
 				</div>
 			</div>
 		</div>
