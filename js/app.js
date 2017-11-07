@@ -69,7 +69,7 @@ $(function(){
 		$(_tabs).eq(_i).show();
 	});
 
-// 互动 轮播
+//轮播
 
 	var lis = $(".c-slider li"),
 	liWidth = $(lis[0]).width(),

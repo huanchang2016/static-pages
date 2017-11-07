@@ -4,14 +4,92 @@
 	<meta charset="UTF-8">
 	<title>就业见习基地登录平台</title>
 	<link rel="icon" href="./../guohui.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="./../css/common.css">
 	<script type="text/javascript" src="./../js/jquery.min.js"></script>
+<style>
+	body{ width: 100%; height: 800px; min-height: auto!important; height: 800px;background: url('./../images/bg.jpg') no-repeat center center; background-size: cover;}
+	.box{ width: 100%; height: 100%; overflow: hidden;}
+	.login-box{ width: 300px; height: 300px;position: absolute; left: 50%; top: 50%; margin-left: -150px; margin-top: -150px; background: rgba(64, 65, 65, 0.3); border-radius: 5px;}
+	.title h4{ font-size: 18px; line-height: 40px; text-align: center; color:#fff; margin: 15px 0;}
+	.form{ width: 240px; margin: 0 auto;}
+	.form-input{ height: 40px; margin-bottom: 10px;}
+	.form-input label>span{ color: #fff; font-size: 16px; line-height: 30px; display: block; width: 70px; letter-spacing: 5px;}
+	.form-input label>input{outline: none; width: 165px; height: 22px; text-indent: 10px; border: 1px solid #0c78db;}
+	.check{ margin-left: 70px; color: red;}
+	.login-btn{ margin-top: 20px; cursor: pointer; margin-bottom: 20px;background: #0c78db; text-align: center; font-size: 16px; line-height: 30px; color:#fff; }
+	.login-btn:hover{ background: #163857;}
+	.forgetPwd{ color:#d6ebf8;}
+</style>
 </head>
 <body>
-	
+	<div class="box">
+		<div class="login-box">
+			<div class="title">
+				<!-- <img src="" alt=""> -->
+				<h4>就业见习基地平台登录</h4>
+			</div>
+			<div class="form">
+				<div class="form-input">
+					<label class="clear"> <span class="fl">账号：</span> <input class="userName fl" id="userName" placeholder="输入用户名" type="text"></label>
+					<div class="check">
+						<span class="_uNull none">用户名不能为空！</span>
+						<span class="_uError none">用户名错误！</span>
+					</div>
+				</div>
+				<div class="form-input">
+					<label class="clear"> <span class="fl">密码：</span> <input class="password fl" id="password" placeholder="输入用户密码" type="password"></label>
+					<div class="check">
+						<span class="_pNull none">密码不能为空！</span>
+						<span class="_pError none">密码错误，请重新输入！</span>
+					</div>
+				</div>
+				<div class="form-input">
+					<div class="login-btn" id="loginBtn">登录</div>
+					<div class="forgetPwd">忘记密码？</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 <script>
 $(function(){
-	console.log('in....');
+	$("#loginBtn").click(function(){
+		var checked = checkUser();
+		if(checked){
+			location.href = './employment/home.html';//登录成功后跳转到就业信息管理中心的后台界面
+		}
+	});
+
+	$(".form-input input").on('keyup', function(){
+		var e = event || window.event;
+		console.log(e);
+		if(e.keyCode == 13){
+			var _checked = checkUser();
+			if(_checked){
+				location.href = './employment/home.html';//登录成功后跳转到就业信息管理中心的后台界面
+			}
+		}
+	})
+
+
+	function checkUser(){
+		var uName = $("#userName").val();
+		var uPwd = $("#password").val();
+		if(!uName){ $('._uNull').show();}else{$('._uNull').hide(); }
+		if(!uPwd){ $("._pNull").show();}else{ $("._pNull").hide();}
+
+		if( uName !== 'admin'){
+			$("._uError").show();
+			return false;
+		}else{ $("._uError").hide();}
+		if( uPwd !== 'admin'){
+			$("._pError").show();
+			return false;
+		}else{ $("._pError").hide();}
+
+		return true;
+	}
+
 })
 </script>
 </html>

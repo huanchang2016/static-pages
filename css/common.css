@@ -1,0 +1,29 @@
+/*公共样式结束*/
+body {font-size: 12px;font-family:"微软雅黑"; color: #666;background: #fff;}
+a {color: #666;text-decoration: none;}
+a:hover {color: #025194;}
+a,address,b,big,blockquote,body,cite,code,dd,del,div,dl,dt,em,fieldset,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,label,legend,li,ol,p,pre,small,span,strong,u,ul,var {
+	margin: 0;
+	padding: 0;
+}
+ol,ul { list-style: none;}
+img {border: 0;vertical-align: middle;}
+em,i {font-style: normal;}
+.fl {float: left;}
+.fr {float: right;}
+.al {text-align: left;}
+.ac {text-align: center;}
+.ar {text-align: right;}
+.none {display: none;}
+.clear:after{ content: '.'; display: block; width: 100%;height:0; overflow: hidden; visibility: hidden; clear: both;}
+.mt0{ margin-top: 0!important; }
+.mb0{ margin-bottom: 0!important; }
+.border0{ border: 0!important; }
+
+body, div, ul , li, img{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; 
+}
+.row{ width: 1120px; margin: 20px auto 0;}
+.con{ width: 1120px; margin: 0 auto; }
+/*公共样式结束*/
