@@ -69,6 +69,13 @@ $(function(){
 		$(_tabs).eq(_i).show();
 	});
 
+	$(".tabs .tabTitle .tab-c").click(function(){
+		var _i = $(this).index() - 1;
+		$(this).addClass("tab-active").siblings().removeClass('tab-active');
+		$(this).parents('.tabTitle').siblings('.tabList').find('.tab').eq(_i).show().siblings().hide();
+	});
+	
+
 //轮播
 
 	var lis = $(".c-slider li"),

@@ -138,8 +138,8 @@
 /* 回应关切，标题 legend */
 .other-tit{ position: relative; left: 0; top:0; }
 .other-title{ width: 76px; height: 20px; line-height: 30px; background: #fff; position: absolute; left: 124px; top: -15px; text-align: center; }
-.fbh{ width: 100%; height: 287px; overflow: hidden; position: relative;left: 0; top: 0;}
-.fbh img{ width: 300px; height: 287px; border: 0; }
+.fbh{ width: 100%; height: 188px;margin-top: 10px; overflow: hidden; position: relative;left: 0; top: 0;}
+.fbh img{ width: 300px; height: 188px; border: 0; }
 .fbh-des{ width: 100%; height: 26px; line-height: 26px; text-align: center; background: rgba( 0,0,0,0.7); position: absolute; left: 0; bottom: 0; }
 .fbh-des a{ color:#fff; }
 /* content-right  depart */
@@ -162,8 +162,8 @@
 .company-icon:hover{ background: url('./../images/icon_22.jpg') no-repeat; }
 .foreigner-icon:hover{ background: url('./../images/icon_33.jpg') no-repeat; }
 .society-icon:hover{ background: url('./../images/icon_44.jpg') no-repeat; }
-.r-list-btn-qd, .r-list-btn-dt{ width: 228px; height: 56px; overflow: hidden; margin: 5px auto 20px; cursor: pointer; background-size: cover;}
-.r-list-btn-qd{ background: url('./../images/fw_img.jpg') no-repeat; }
+.r-list-btn-dt{ width: 228px; height: 56px; overflow: hidden; margin: 5px auto 20px; cursor: pointer; background-size: cover;}
+
 .r-list-btn-dt{ background: url('./../images/fw_img2.jpg') no-repeat; }
 
 .r-cx-con{ width: 50%; height: 115px; display: flex; flex-direction: column; justify-content: space-around; align-items: center;}
@@ -174,7 +174,7 @@
 .cx-date:hover{ background-image: url('./../images/sjcx_btn_hover.jpg'); }
 .cx-date>a{ display: block; width: 100%; height: 100%; }
 
-/* 礼拜菜单 */
+/* 菜单 */
 .list{
 	border-top: 8px solid #00558f;
 	border-bottom: #bababa;
@@ -183,6 +183,19 @@
 .list-box{width: 20%; padding: 10px;}
 .list-branch-title{ font-size: 14px; }
 .list-branch{ font-size: 12px; color: #333; }
+
+.tabs{ border: 1px solid #ddd; margin-top: 30px;}
+.tabTitle{ width: 250px;min-height: 200px; height: auto!important; height: 200px;border-right: 1px solid #ddd;}
+.tab-tit{ background: #ddd; text-align: center; font-size: 16px;}
+.tabTitle li{ height: 34px; line-height: 34px;}
+.tabTitle li.tab-c{text-indent: 10px; border-bottom: 1px solid #ddd; cursor: pointer;color: #025194;}
+.tabTitle li.tab-active{ border-right: 4px solid #025194; border-color: #025194; background: #9fc0dc;}
+
+.tab-content{ padding: 30px;}
+.tabList{ width: 850px;}
+.tab .tab-content li{ width: 360px; margin-right: 20px;}
+
+
 /* 友情链接 */
 .link{
 	background: #ddd;
